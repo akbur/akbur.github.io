@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUKA</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,300&family=Lora:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="pt-2 pb-2 bg-black">
+        <div class="container">
+            <div class="w-full mx-auto text-center my-2">
+                <span class="font-lora text-white">SMAN 21 JAKARTA</span>
+            </div>
+        </div>
+    </header>
+    <section class="pt-16 pb-16">
+        <div class="container">
+            <div class="w-full mx-auto text-center mb-16">
+                <span class="font-lora text-4xl">SUKA</span>
+            </div>
+            <div class="w-full lg:flex lg:flex-wrap">
+                <div class="w-full mx-auto bg-blue-900 rounded-t-xl px-4 py-4 text-center lg:w-1/4 lg:rounded-t-none lg:rounded-l-xl">
+                    <form action="">
+                        <div class="mb-4 px-auto">
+                            <input type="text" placeholder="Nama" name="nama"class="rounded-md w-full max-w-sm p-2">
+                        </div>
+                        <div class="mb-4 px-auto">
+                            <input type="email" placeholder="Email"
+                            name="email"class="rounded-md w-full max-w-sm p-2">
+                        </div>
+                        <div class="px-auto">
+                            <select name="kelas" id="kelas" class="w-full max-w-sm rounded-md p-2">
+                                <option value=""disabled selected>Pilih kelas...</option>
+                                <optgroup label="Kelas 10">
+                                    <option> X.1 </option>
+                                    <option> X.2 </option>
+                                    <option> X.3 </option>
+                                    <option> X.4 </option>
+                                    <option> X.5 </option>
+                                    <option> X.6 </option>
+                                    <option> X.7 </option>
+                                </optgroup>
+                                <optgroup label="Kelas 11">
+                                    <option> XI MIPA 1 </option>
+                                    <option> XI MIPA 2 </option>
+                                    <option> XI MIPA 3 </option>
+                                    <option> XI MIPA 4 </option>
+                                    <option> XI IPS 1 </option>
+                                    <option> XI IPS 2 </option>
+                                    <option> XI IPS 3 </option>
+                                    <option> XI IPS 4 </option>
+                                </optgroup>
+                                <optgroup label="Kelas 12">
+                                    <option> XII MIPA 1 </option>
+                                    <option> XII MIPA 2 </option>
+                                    <option> XII MIPA 3 </option>
+                                    <option> XII MIPA 4 </option>
+                                    <option> XII IPS 1 </option>
+                                    <option> XII IPS 2 </option>
+                                    <option> XII IPS 3 </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="hidden lg:block px-auto pt-40">
+                        <div class="">
+                            <span class="font-lora text-white text-lg">MPK SMAN 21 JAKARTA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="full mx-auto rounded-b-xl px-4 py-4 text-center bg-blue-800 lg:w-3/4 lg:rounded-bl-none lg:rounded-r-xl">
+                    <div class="mb-4 px-auto">
+                        <textarea name="aspirasi" id="aspirasi" cols="30" rows="10" placeholder="Aspirasi..." class="rounded-md w-full max-w-sm lg:max-w-none p-2"></textarea>
+                    </div>
+                    <div class="px-auto">
+                        <div class="bg-red-600 w-full max-w-sm mx-auto rounded-md p-2 text-red-100 hover:text-red-50 hover:bg-red-500 hover:scale-105 ">
+                            <button type="submit" class="font-lora">Kirim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
